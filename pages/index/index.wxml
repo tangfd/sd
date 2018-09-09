@@ -1,0 +1,23 @@
+<view class='sd-body' wx:for="{{data}}">
+  <view>
+    日期：{{item.date}}
+  </view>
+  <view class='sd-li' wx:for="{{item.array}}">
+    <view class='sd-content'>
+      <view>
+        围巾围巾，5
+      </view>
+      <view>
+        垫付：39.8（立返）
+      </view>
+    </view>
+    <view class='sd-content'>
+      <view>
+        佣金：10元
+      </view>
+      <view>
+        货返（未返）
+      </view>
+    </view>
+  </view>
+</view>

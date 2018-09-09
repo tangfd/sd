@@ -1,0 +1,42 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <input type='text' name="goodsName" placeholder="商品名称" />
+  </view>
+  <view class="section">
+  <picker mode = selector bindchange="bindAccountChange" value="{{accountIndex}}" range="{{accounts}}">
+    <input name='account' hidden='hidden'/>
+    <view class="picker picker-input">
+      淘宝账号：{{accounts[accountIndex]}}
+    </view>
+  </picker>
+  </view>
+  <view class="section">
+    <input type='number' name="principal" placeholder="垫付金额" />
+  </view>
+  <view class="section">
+  <picker mode = selector bindchange="bindPrincipalChange" value="{{principalIndex}}" range="{{array1}}">
+    <input hidden='hidden' name='principalType'/>
+    <view class="picker picker-input">
+      本金返款类型：{{array1[principalIndex]}}
+    </view>
+  </picker>
+  </view>
+  <view class="section">
+    <input type='number' name="commission" placeholder="佣金" />
+  </view>
+  <view class="section">
+  <picker mode = selector bindchange="bindCommissionChange" value="{{commissionIndex}}" range="{{array}}">
+    <input hidden='hidden' name='commissionType'/>
+    <view class="picker picker-input">
+      佣金返款类型：{{array[commissionIndex]}}
+    </view>
+  </picker>
+  </view>
+  <view class="section">
+    <input name="remark" placeholder="备注" />
+    </view>
+  <view class="btn-area">
+    <button class='btn-submit' formType="submit">提交</button>
+    <button formType="reset">取消</button>
+  </view>
+</form>

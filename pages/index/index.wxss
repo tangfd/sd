@@ -1,0 +1,14 @@
+.sd-body{
+ 
+}
+.sd-content{
+  width: 49%;
+  float: left;
+  margin-left: 1%;
+  background-color: #f8f8f8;
+}
+
+.sd-li{
+  height: 55px;
+  line-height: 25px;
+}
